@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Careers at HydroGuard Laboratory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+
+    --ink: #102428;
+    --ink-soft: #3C5459;
+    --paper: #F5FAFA;
+    --surface: #FFFFFF;
+    --surface-tint: #E9F4F4;
+    --teal-900: #0B4A52;
+    --teal-700: #106A75;
+    --teal-600: #158896;
+    --aqua-400: #4FC1CB;
+    --aqua-200: #BFE9EC;
+    --amber-500: #E0932E;
+    --amber-600: #C77A1B;
+    --line: #CFE3E4;
+    --focus-ring: #0B4A52;
+    --shadow: 0 1px 2px rgba(16,36,40,0.06);
+    --radius-sm: 4px;
+    --radius-md: 10px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #EAF3F3;
+      --ink-soft: #B9CCCE;
+      --paper: #0B1B1E;
+      --surface: #102A2E;
+      --surface-tint: #123338;
+      --teal-900: #BFE9EC;
+      --teal-700: #7ED4DA;
+      --teal-600: #63C4CC;
+      --aqua-400: #4FC1CB;
+      --aqua-200: #1E4348;
+      --amber-500: #F0A94B;
+      --amber-600: #F6C079;
+      --line: #234A50;
+      --focus-ring: #7ED4DA;
+      --shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #EAF3F3;
+    --ink-soft: #B9CCCE;
+    --paper: #0B1B1E;
+    --surface: #102A2E;
+    --surface-tint: #123338;
+    --teal-900: #BFE9EC;
+    --teal-700: #7ED4DA;
+    --teal-600: #63C4CC;
+    --aqua-400: #4FC1CB;
+    --aqua-200: #1E4348;
+    --amber-500: #F0A94B;
+    --amber-600: #F6C079;
+    --line: #234A50;
+    --focus-ring: #7ED4DA;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+
+  html {
+    scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px));
+  }
+
+  * { box-sizing: border-box; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.12;
+    margin: 0;
+    color: var(--teal-900);
+  }
+
+  p { margin: 0 0 1em; max-width: 62ch; }
+
+  a { color: var(--teal-700); }
+  a:hover { color: var(--amber-600); }
+
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -60px;
+    background: var(--teal-900);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-sm);
+    z-index: 100;
+    transition: top 0.15s ease;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus {
+    top: calc(1rem + env(safe-area-inset-top, 0px));
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Header */
+  header.site {
+    position: sticky;
+    top: 0;
+    top: env(safe-area-inset-top, 0px);
+    padding-top: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 0;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .brand svg { flex-shrink: 0; }
+
+  .brand-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--teal-900);
+  }
+
+  nav.primary ul {
+    list-style: none;
+    display: flex;
+    gap: 1.6rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.primary a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.1rem;
+    border-bottom: 2px solid transparent;
+  }
+  nav.primary a:hover { color: var(--teal-700); border-bottom-color: var(--aqua-400); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.3rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--teal-900);
+    color: #fff;
+  }
+  .btn-primary:hover { background: var(--amber-600); color: #191008; }
+  .btn-ghost {
+    background: transparent;
+    border-color: var(--teal-900);
+    color: var(--teal-900);
+  }
+  .btn-ghost:hover { background: var(--surface-tint); }
+
+  .nav-cta { display: none; }
+  @media (min-width: 720px) { .nav-cta { display: inline-flex; } }
+
+  /* Hero */
+  .hero {
+    padding: 3.5rem 0 3rem;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (max-width: 800px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-art { order: -1; max-width: 220px; margin: 0 auto; }
+  }
+
+  .eyebrow-note {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--teal-700);
+    background: var(--surface-tint);
+    border: 1px solid var(--aqua-200);
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+    max-width: 14ch;
+    margin-bottom: 1rem;
+  }
+
+  .hero .tagline {
+    font-style: italic;
+    color: var(--teal-700);
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero-lede { font-size: 1.05rem; color: var(--ink-soft); }
+
+  .hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 1.6rem; }
+
+  .deadline-strip {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    border-left: 3px solid var(--amber-500);
+    padding-left: 0.8rem;
+  }
+  .deadline-strip strong { color: var(--ink); }
+
+  /* Sections */
+  section { padding: 3.2rem 0; }
+  section.alt { background: var(--surface-tint); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+  .section-head { max-width: 60ch; margin-bottom: 2rem; }
+  .section-head h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.6rem; }
+  .section-head p { color: var(--ink-soft); }
+
+  /* Values */
+  .values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .values-list li {
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .values-list strong {
+    display: block;
+    color: var(--teal-900);
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  .values-list span { color: var(--ink-soft); font-size: 0.95rem; }
+
+  /* Products & services */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.1rem;
+    margin-bottom: 2.4rem;
+  }
+  .product-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--shadow);
+  }
+  .product-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+  .product-card p {
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    margin: 0;
+  }
+
+  .service-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.4rem 2rem;
+  }
+  .service-list li { padding-top: 1rem; border-top: 1px solid var(--line); }
+  .service-list h3 {
+    font-size: 1.02rem;
+    margin-bottom: 0.35rem;
+    color: var(--teal-900);
+  }
+  .service-list p {
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    margin: 0;
+  }
+
+  .subhead {
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    color: var(--teal-700);
+    margin-bottom: 1rem;
+  }
+
+  /* Openings */
+  .job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .job-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .job-card > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.1rem 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    color: var(--teal-900);
+    font-size: 1.15rem;
+  }
+  .job-card > summary::-webkit-details-marker { display: none; }
+
+  .job-card > summary .role-meta {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  .chev {
+    flex-shrink: 0;
+    transition: transform 0.18s ease;
+    color: var(--teal-600);
+  }
+  details[open] > summary .chev { transform: rotate(180deg); }
+
+  .job-body {
+    padding: 0 1.3rem 1.3rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    color: var(--ink-soft);
+  }
+  .job-body p:last-child { margin-bottom: 0; }
+
+  /* Qualifications / offer two-col */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+  .check-list { list-style: none; margin: 0; padding: 0; }
+  .check-list li {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+  .check-list li:last-child { border-bottom: none; }
+  .check-list svg { flex-shrink: 0; margin-top: 0.2rem; color: var(--teal-600); }
+
+  /* Steps */
+  ol.steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1.3rem;
+    counter-reset: step;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background: var(--teal-900);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  ol.steps h3 { font-size: 1.02rem; margin-bottom: 0.3rem; }
+  ol.steps p { color: var(--ink-soft); font-size: 0.93rem; margin: 0; }
+
+  /* Contact / apply */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+  .contact-card h3 { font-size: 1.15rem; margin-bottom: 0.9rem; }
+  .contact-card dl { margin: 0; }
+  .contact-card dt {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    margin-top: 0.8rem;
+  }
+  .contact-card dt:first-child { margin-top: 0; }
+  .contact-card dd {
+    margin: 0.15rem 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .contact-card dd a { text-decoration: none; }
+  .contact-card dd a:hover { text-decoration: underline; }
+
+  footer.site {
+    padding: 2rem 0 calc(2rem + env(safe-area-inset-bottom, 0px));
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="HydroGuard Laboratory, home">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <path d="M15 2C15 2 6 13.5 6 19.5C6 24.5 10 27.5 15 27.5C20 27.5 24 24.5 24 19.5C24 13.5 15 2 15 2Z" fill="var(--aqua-400)" stroke="var(--teal-900)" stroke-width="1.4"/>
+        <path d="M11 20C11 22.2 12.8 23.5 15 23.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">HydroGuard Laboratory</span>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products-services">Products &amp; Services</a></li>
+        <li><a href="#openings">Openings</a></li>
+        <li><a href="#offer">Why join us</a></li>
+        <li><a href="#apply">Apply</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#openings">View openings</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <div id="top"></div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow-note">We're hiring in Kabacan, Cotabato</span>
+        <h1>Help us guard the water our community depends on</h1>
+        <p class="tagline">Guarding Quality, One Drop at a Time.</p>
+        <p class="hero-lede">HydroGuard Laboratory is a new water quality testing laboratory serving households, water-refilling stations, schools, healthcare institutions, restaurants, hotels, and businesses across Kabacan. We're building the founding team &mdash; five roles are open now.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#openings">See open positions</a>
+          <a class="btn btn-ghost" href="#apply">How to apply</a>
+        </div>
+        <p class="deadline-strip"><strong>Application deadline: December 25, 2026.</strong> Applications are reviewed as they arrive.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 220 260" width="100%" role="img" aria-hidden="true">
+          <ellipse cx="110" cy="235" rx="80" ry="12" fill="var(--aqua-200)"/>
+          <path d="M110 15C110 15 45 115 45 165C45 202 74 228 110 228C146 228 175 202 175 165C175 115 110 15 110 15Z" fill="var(--aqua-400)" stroke="var(--teal-900)" stroke-width="2"/>
+          <path d="M68 168C68 190 86 205 110 205" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+          <circle cx="150" cy="140" r="4" fill="#fff" opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About the laboratory</h2>
+        <p>HydroGuard Laboratory is a proposed water quality testing laboratory established in Kabacan, Cotabato. We provide accurate, reliable, and accessible testing services that assess the microbiological, physical, and chemical quality of water from different sources &mdash; helping customers identify contamination, promote water safety, protect public health, and support environmental protection.</p>
+      </div>
+      <ul class="values-list">
+        <li><strong>Accurate</strong><span>Precise testing and dependable results.</span></li>
+        <li><strong>Reliable</strong><span>Consistent service you can count on.</span></li>
+        <li><strong>Safe</strong><span>Promoting safer water for everyone.</span></li>
+        <li><strong>Quality</strong><span>Maintaining high standards in every test.</span></li>
+        <li><strong>Trusted</strong><span>Building confidence through honest results.</span></li>
+        <li><strong>Efficient</strong><span>Providing timely and organized services.</span></li>
+        <li><strong>Community-focused</strong><span>Supporting healthier and safer communities.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="products-services" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Products &amp; services</h2>
+        <p>What HydroGuard Laboratory delivers to households, water-refilling stations, schools, healthcare institutions, restaurants, hotels, and businesses.</p>
+      </div>
+
+      <p class="subhead">Products</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <h3>Water Quality Test Report</h3>
+          <p>A detailed report containing the results of the water sample analysis.</p>
+        </div>
+        <div class="product-card">
+          <h3>Laboratory Analysis Results</h3>
+          <p>The measured values of the tested physical, chemical, and microbiological parameters.</p>
+        </div>
+        <div class="product-card">
+          <h3>Customized Testing Packages</h3>
+          <p>Testing packages designed according to the specific needs and requirements of customers.</p>
+        </div>
+        <div class="product-card">
+          <h3>Water Quality Documentation</h3>
+          <p>Documented results customers can use for monitoring, reference, or compliance purposes.</p>
+        </div>
+      </div>
+
+      <p class="subhead">Services</p>
+      <ul class="service-list">
+        <li>
+          <h3>Client Assistance</h3>
+          <p>We assist customers with inquiries, testing requirements, sample preparation, and other concerns, with clear information to help clients choose the right service.</p>
+        </li>
+        <li>
+          <h3>Testing and Analysis</h3>
+          <p>Microbiological, physical, and chemical analysis of submitted water samples, following appropriate laboratory procedures for accurate, reliable results.</p>
+        </li>
+        <li>
+          <h3>Sample Handling and Collection</h3>
+          <p>We accept water samples from customers and may provide collection services, with proper handling, labeling, storage, and transportation to maintain sample quality.</p>
+        </li>
+        <li>
+          <h3>Result Reporting</h3>
+          <p>Customers receive a laboratory report with the information and results of the tests performed, presented clearly for easier understanding and reference.</p>
+        </li>
+        <li>
+          <h3>Customized Testing</h3>
+          <p>Testing options based on the specific needs of different customers &mdash; households, businesses, schools, water-refilling stations, and other establishments.</p>
+        </li>
+        <li>
+          <h3>Community Water Monitoring</h3>
+          <p>Regular water quality monitoring that supports communities and establishments in identifying changes or possible contamination in their water sources.</p>
+        </li>
+        <li>
+          <h3>Information and Awareness</h3>
+          <p>Basic information about water quality, proper sample handling, and the importance of regular testing, to promote safer water practices in the community.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how-to-inquire">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How to inquire for services</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Contact us</h3>
+          <p>Send us a message or visit our laboratory.</p>
+        </li>
+        <li>
+          <h3>Choose your test</h3>
+          <p>Tell us what type of water testing you need.</p>
+        </li>
+        <li>
+          <h3>Get your sample</h3>
+          <p>Request sample collection.</p>
+        </li>
+        <li>
+          <h3>Get tested</h3>
+          <p>Our laboratory will analyze your sample.</p>
+        </li>
+        <li>
+          <h3>Receive your results</h3>
+          <p>Get your laboratory test report and results.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="openings" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Open positions</h2>
+        <p>Five roles are open as we build the founding HydroGuard team. Select a role to read more.</p>
+      </div>
+      <div class="job-list">
+
+        <details class="job-card">
+          <summary>
+            Lead Microbiologist
+            <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="job-body">
+            <p>Leads microbiological testing of water samples, oversees laboratory procedures, and ensures results are accurate and reliable across every sample the lab handles.</p>
+          </div>
+        </details>
+
+        <details class="job-card">
+          <summary>
+            Laboratory Technician
+            <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="job-body">
+            <p>Performs microbiological, physical, and chemical analysis of submitted water samples, following proper laboratory procedures to produce dependable results.</p>
+          </div>
+        </details>
+
+        <details class="job-card">
+          <summary>
+            Marketing Coordinator
+            <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="job-body">
+            <p>Shares information about water quality and the laboratory's services with households, businesses, schools, and the wider community, and helps build public awareness around safe water practices.</p>
+          </div>
+        </details>
+
+        <details class="job-card">
+          <summary>
+            Customer Service
+            <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="job-body">
+            <p>Assists clients with inquiries, testing requirements, and sample preparation, providing clear information so customers can choose the right testing service for their needs.</p>
+          </div>
+        </details>
+
+        <details class="job-card">
+          <summary>
+            Field Sample Collector
+            <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="job-body">
+            <p>Collects water samples from customer sites and handles labeling, storage, and transportation so that sample quality is preserved on the way to the laboratory.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="qualifications">
+    <div class="wrap two-col">
+      <div>
+        <div class="section-head">
+          <h2>What we're looking for</h2>
+        </div>
+        <ul class="check-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Bachelor's degree in Microbiology, Medical Technology, Chemistry, Biology, or a related field.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Laboratory experience is an advantage.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Familiarity with water quality testing is an advantage.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Must be willing to work in a laboratory setting.</span>
+          </li>
+        </ul>
+      </div>
+      <div id="offer">
+        <div class="section-head">
+          <h2>What we offer</h2>
+        </div>
+        <ul class="check-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Competitive compensation.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>A safe and professional working environment.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Training and development opportunities.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 9.3L7.8 11.6L12.5 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Opportunities for professional growth.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How to apply</h2>
+        <p>Applications close December 25, 2026. Here's what happens after you reach out.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Get in touch</h3>
+          <p>Message us or visit the laboratory to let us know which role you're applying for.</p>
+        </li>
+        <li>
+          <h3>Share your background</h3>
+          <p>Tell us about your qualifications and experience for the position.</p>
+        </li>
+        <li>
+          <h3>Talk with the team</h3>
+          <p>We'll follow up to discuss the role and next steps.</p>
+        </li>
+        <li>
+          <h3>Hear back</h3>
+          <p>We'll let you know the outcome and, if it's a match, welcome you aboard.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Contact us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>For hiring inquiries</h3>
+          <dl>
+            <dt>Phone</dt>
+            <dd><a href="tel:+639856574633">0985&nbsp;-&nbsp;657&nbsp;-&nbsp;4633</a></dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:rznjay9158@gmail.com">rznjay9158@gmail.com</a></dd>
+          </dl>
+        </div>
+        <div class="contact-card">
+          <h3>Laboratory</h3>
+          <dl>
+            <dt>Location</dt>
+            <dd>Kabacan, Cotabato</dd>
+            <dt>Phone</dt>
+            <dd><a href="tel:+639123456789">0912&nbsp;-&nbsp;345&nbsp;-&nbsp;6789</a></dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:HydroGuard123@gmail.com">HydroGuard123@gmail.com</a></dd>
+            <dt>Facebook</dt>
+            <dd>HydroGuard Laboratory</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p style="margin:0;">HydroGuard Laboratory &middot; Kabacan, Cotabato &middot; Guarding Quality, One Drop at a Time.</p>
+  </div>
+</footer>
+
+</body>
+</html>
